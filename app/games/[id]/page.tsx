@@ -2,12 +2,14 @@ import type React from "react"
 import { notFound } from "next/navigation"
 import Game237 from "@/components/237"
 import TetrisGame from "@/components/tetris"
+import Game from "@/components/Game"
 
 // This is a simple mapping of game IDs to their components
 // In a real app, you might load these dynamically
 const gameComponents: Record<string, React.ComponentType> = {
   "237": Game237,
   tetris: TetrisGame,
+  snake: Game,
   // Add other games here as you develop them
 }
 
